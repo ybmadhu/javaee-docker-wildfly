@@ -1,0 +1,24 @@
+https://rpestano.wordpress.com/2015/01/10/a-simple-java-ee-docker-example/   --> reference url
+
+download java
+wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz
+
+download wildfly
+
+wget -c http://download.jboss.org/wildfly/8.2.0.Final/wildfly-8.2.0.Final.zip
+
+download war file
+https://github.com/rmpestano/javaee-docker-sample/tree/master/java_ee/car-service.war
+
+docker build
+------------
+docker build -t javaee .
+
+docker run
+----------
+docker run -it -p 8080:8080 -p 9990:9990 --name javaeeapp javaee
+
+access the app
+---------
+http://<ipaddr>:8080/car-service/
+
