@@ -7,6 +7,10 @@ download wildfly
 
 wget -c http://download.jboss.org/wildfly/8.2.0.Final/wildfly-8.2.0.Final.zip
 
+unzip wildfly
+-----------
+unzip wildfly-8.2.0.Final.zip
+
 download war file
 https://github.com/rmpestano/javaee-docker-sample/tree/master/java_ee/car-service.war
 
